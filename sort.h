@@ -1,6 +1,10 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
+#include <stdio.h>
+#include <stddef.h>
+#include <stdlib.h>
+
 /*DATA STRUCTURES*/
 /**
  * struct listint_s - Doubly linked list node
