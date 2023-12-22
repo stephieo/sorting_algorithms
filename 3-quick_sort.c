@@ -21,10 +21,10 @@ void swap(int *array, size_t size, int *a, int *b)
 }
 
 /**
- * lomuto_pertition - partitions the array
+ * lomuto_partition - partitions the array
  * @array: the array to be sorted
  * @size: the size of the array to be sorted
- * @lo: low index 
+ * @lo: low index
  * @hi: high index
  *
  * Return: size_t
