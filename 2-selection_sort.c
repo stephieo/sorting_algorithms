@@ -6,8 +6,11 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	size_t i, j;
-	int min, temp;
+	size_t i, j, min;
+	int  temp;
+
+	if (array == NULL || size < 2)
+		return;
 
 	/*outer loop, keeps track of current available space*/
 	for (i = 0; i <= (size - 2); i++)
@@ -21,10 +24,14 @@ void selection_sort(int *array, size_t size)
 				min = j;
 			}
 		}
+		if (min != i)
+		{	
 	/*swap min integer to current available position*/
-		temp = array[i];
-		array[i] = array[min];
-		array[min] = temp;
-		print_array(array, size);
+			temp = array[i];
+			array[i] = array[min];
+			array[min] = temp;
+			print_array(array, size);
+		}
 	}
+
 }
