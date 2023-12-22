@@ -25,7 +25,7 @@ void selection_sort(int *array, size_t size)
 			}
 		}
 		if (min != i)
-		{	
+		{
 	/*swap min integer to current available position*/
 			temp = array[i];
 			array[i] = array[min];
